@@ -1,3 +1,26 @@
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCK_6P0CCd5NGNAFls-55ULfkAgkQhYzWU",
+    authDomain: "hexo-blog-2de2a.firebaseapp.com",
+    projectId: "hexo-blog-2de2a",
+    storageBucket: "hexo-blog-2de2a.appspot.com",
+    messagingSenderId: "886252658662",
+    appId: "1:886252658662:web:3c3d8e7ba61b083e468027",
+    measurementId: "G-EZM0C0ED5Z"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 {%- if theme.google_ad_client %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ theme.google_ad_client }}"
