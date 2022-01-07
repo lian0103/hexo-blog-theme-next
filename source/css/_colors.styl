@@ -1,4 +1,5 @@
 :root {
+  --head-color:$head-color;
   --body-bg-color: $body-bg-color;
   --content-bg-color: $content-bg-color;
   --card-bg-color: $card-bg-color;
@@ -22,6 +23,7 @@
 if (hexo-config('darkmode')) {
   @media (prefers-color-scheme: dark) {
     :root {
+      --head-color:$head-color;
       --body-bg-color: $body-bg-color-dark;
       --content-bg-color: $content-bg-color-dark;
       --card-bg-color: $card-bg-color-dark;
